@@ -1,0 +1,26 @@
+import numpy as np
+
+# Root vessel properties
+INITIAL_RADIUS = 5.0
+INITIAL_RADIUS_STD = 0.3
+INITIAL_LENGTH = 50.0
+INITIAL_START_POINT = np.array([0, 0, 0])
+INITIAL_DIRECTION = np.array([0, 1, 0])
+NUM_GENERATIONS = 8
+NUM_TREES_TO_SIMULATE = 100
+
+# Murray's law
+RADIUS_RATIO_MEAN = 0.7937  # 2^(-1/3)
+RADIUS_RATIO_STD = 0.05
+
+# Length scaling
+LENGTH_RATIO_MEAN = 0.75
+LENGTH_RATIO_STD = 0.1
+
+# Branching angles
+BRANCH_ANGLE_MEAN_DEG = 37.5
+BRANCH_ANGLE_STD_DEG = 5.0
+
+# Voxelization settings
+VOXEL_RESOLUTION = 0.1
+PADDING = 5.0
